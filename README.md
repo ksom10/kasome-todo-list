@@ -23,3 +23,7 @@ git checkout name-of-branch
 
 Step 3) Add branch to github
 git push --set-upstream origin name-of-branch
+
+## Copying code from another branch
+
+git merge name-of-other-branch
