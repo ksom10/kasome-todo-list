@@ -1,7 +1,7 @@
 # Todo List App
 Kameron Someson
 
-Live Link: [Todo List App](http://localhost:8000)
+Live Link: [Todo List App](https://in-info-web4.informatics.iupui.edu/~kasome/n322/public/)
 
 Adding changes to github
 Step 1.) Add changes
@@ -23,3 +23,7 @@ git checkout name-of-branch
 
 Step 3) Add branch to github
 git push --set-upstream origin name-of-branch
+
+## Copying code from another branch
+
+git merge name-of-other-branch
