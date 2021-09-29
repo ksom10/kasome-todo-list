@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Segment, Header, Form, Select, Button, Input } from 'semantic-ui-react';
+import { Segment, Header, Form, Select, Button, Input, Icon, Dropdown } from 'semantic-ui-react';
 
 const NewTaskForm = ({ closeNewTask, newTask, setNewTask, addNewTask }) => {
 
@@ -35,6 +35,19 @@ const NewTaskForm = ({ closeNewTask, newTask, setNewTask, addNewTask }) => {
                         value={newTask.color}
                         onChange={changeNewTask}
                         name='color'
+                    />
+                    <Form.Field
+                    control={Select}
+                    label='Task Category'
+                    placeholder='Choose Task Category...'
+                    options={[
+                        {text: 'Event', value: 'Event'},
+                        {text: 'Meeting', value: "Meeting"},
+                        {text: 'Social', value: 'Social'}
+                    ]}
+                    value={newTask.category}
+                    onChange={changeNewTask}
+                    name='category'
                     />
                     <Button.Group fluid>
                         <Button type='button' onClick={closeNewTask} color='red'>Cancel</Button>
